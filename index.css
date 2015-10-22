@@ -1,0 +1,91 @@
+.list {
+  width: 400px;
+  border-spacing: 0px;
+}
+
+.list td,
+.list th {
+  box-sizing: border-box;
+}
+
+.list th {
+  line-height: 24px;
+  height: 40px;
+  font-weight: bold;
+  border: none;
+  background: none;
+  border-bottom: 2px solid #5B5B5B;
+  text-align: left;
+  width: 200px;
+}
+
+.list td {
+  line-height: 30px;
+}
+
+.name {
+  padding-left: 10px;
+}
+
+.inner {
+  display: none;
+}
+
+.inner.open {
+  display: table-row;
+}
+
+.switch, .ico {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("http://www.gbtags.com/gb/networks/background/d0642682-f7aa-4c64-98c6-fbd320d52706.png");
+  vertical-align: text-top;
+}
+
+.leaf .ico {
+  background-position: -110px -31px;
+}
+
+.outer .ico {
+  background-position: -110px 0;
+}
+
+.outer.open .ico {
+  background-position: -110px -15px;
+}
+
+.outer .switch {
+  background-position: -74px -18px;
+}
+
+.leaf .switch {
+  background-position: -56px -18px;
+}
+
+.outer.open .switch {
+  background-position: -92px -18px;
+}
+
+.list .leaf:last-child .switch {
+  background-position: -56px -36px;
+}
+
+#listTable > tbody > tr:first-child {
+  background-position: -74px 0;
+}
+
+.text-indent {
+  display: inline-block;
+  width: 16px;
+}
+
+.outer.open > td,
+#listTable > tbody > tr > td {
+  border-bottom: 1px solid #E6E6E6;
+}
+
+tr.outer.focus,
+tr.leaf.focus{
+  background: #ccc;
+}

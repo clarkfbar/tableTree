@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <table id="listTable" class="list">
+      <thead>
+        <tr>
+          <th>名称</th>
+          <th>排序</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="outer">
+          <td><span class="switch"></span><span class="ico"></span><span class="name">A</span></td>
+          <td>1</td>
+        </tr>
+        <tr class="inner">
+          <td colspan="2">
+            <table class="list">
+              <tr class="outer">
+                <td><span class="text-indent"></span><span class="switch"></span><span class="ico"></span><span class="name">B</span></td>
+                <td>2</td>
+              </tr>
+              <tr class="inner">
+                <td colspan="2">
+                  <table class="list">
+                    <tr class="leaf">
+                      <td><span class="text-indent"></span><span class="text-indent"></span><span class="switch"></span><span class="ico"></span><span class="name">C</span></td>
+                      <td>3</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="leaf">
+          <td><span class="switch"></span><span class="ico"></span><span class="name">D</span></td>
+          <td>4</td>
+        </tr>
+        <tr class="outer">
+          <td><span class="switch"></span><span class="ico"></span><span class="name">E</span></td>
+          <td>5</td>
+        </tr>
+        <tr class="inner">
+          <td colspan="2">
+            <table class="list">
+              <tr class="leaf">
+                <td><span class="text-indent"></span><span class="switch"></span><span class="ico"></span><span class="name">F</span></td>
+                <td>6</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 推荐开源CDN来选取需引用的外部JS //-->
+    <script type="text/javascript" src="http://cdn.gbtags.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
